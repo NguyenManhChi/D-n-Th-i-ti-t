@@ -1,0 +1,136 @@
+=====================================================
+HƯỚNG DẪN CHẠY ỨNG DỤNG WEATHER APP
+=====================================================
+
+Dự án: Weather App (Ứng dụng dự báo thời tiết)
+Framework: React + Vite
+Ngày tạo: 25/12/2025
+
+=====================================================
+YÊU CẦU HỆ THỐNG
+=====================================================
+
+- Node.js phiên bản 16 trở lên
+- npm hoặc yarn
+- Trình duyệt web hiện đại (Chrome, Firefox, Edge, Safari)
+
+=====================================================
+CÁC BƯỚC CHẠY DỰ ÁN
+=====================================================
+
+BƯỚC 1: Mở Terminal/Command Prompt
+------------------------------------
+Mở PowerShell hoặc Command Prompt và di chuyển vào thư mục dự án:
+
+    cd c:\WEATHER_APP-main\WEATHER_APP-main
+
+
+BƯỚC 2: Cài đặt các thư viện phụ thuộc
+------------------------------------
+Chạy lệnh sau để cài đặt tất cả các package cần thiết:
+
+    npm install
+
+Hoặc nếu bạn dùng yarn:
+
+    yarn install
+
+
+BƯỚC 3: Chạy ứng dụng ở chế độ Development
+------------------------------------
+Sau khi cài đặt xong, chạy lệnh:
+
+    npm run dev
+
+Hoặc với yarn:
+
+    yarn dev
+
+Ứng dụng sẽ chạy trên địa chỉ: http://localhost:5173
+
+
+BƯỚC 4: Mở trình duyệt
+------------------------------------
+Mở trình duyệt web và truy cập:
+
+    http://localhost:5173
+
+Bạn sẽ thấy ứng dụng Weather App đang chạy.
+
+
+=====================================================
+CÁC LỆNH KHÁC
+=====================================================
+
+1. Build ứng dụng cho production:
+   
+    npm run build
+
+   Kết quả build sẽ nằm trong thư mục "dist"
+
+
+2. Preview bản build:
+   
+    npm run preview
+
+   Xem trước bản build production trên local
+
+
+3. Kiểm tra lỗi code (Linting):
+   
+    npm run lint
+
+   Kiểm tra code theo chuẩn ESLint
+
+
+=====================================================
+CẤU TRÚC DỰ ÁN
+=====================================================
+
+WEATHER_APP-main/
+├── public/                 # Thư mục chứa file tĩnh
+├── src/
+│   ├── App.jsx            # Component chính của ứng dụng
+│   ├── main.jsx           # File entry point
+│   ├── index.css          # File CSS chính
+│   ├── components/
+│   │   └── weather.jsx    # Component hiển thị thông tin thời tiết
+│   └── assets/            # Thư mục chứa hình ảnh, icon
+├── index.html             # File HTML chính
+├── package.json           # File cấu hình npm
+├── vite.config.js         # File cấu hình Vite
+├── tailwind.config.js     # File cấu hình Tailwind CSS
+└── eslint.config.js       # File cấu hình ESLint
+
+
+=====================================================
+XỬ LÝ LỖI THƯỜNG GẶP
+=====================================================
+
+1. Lỗi "npm: command not found"
+   → Cài đặt Node.js từ https://nodejs.org/
+
+2. Lỗi "Port 5173 đã được sử dụng"
+   → Đóng ứng dụng đang chạy trên port đó
+   → Hoặc Vite sẽ tự động chọn port khác
+
+3. Lỗi khi cài đặt dependencies
+   → Xóa thư mục node_modules và file package-lock.json
+   → Chạy lại: npm install
+
+4. Trang web hiển thị trắng
+   → Kiểm tra Console trong Developer Tools (F12)
+   → Kiểm tra xem có lỗi JavaScript không
+
+
+=====================================================
+GHI CHÚ
+=====================================================
+
+- Để dừng ứng dụng: Nhấn Ctrl + C trong terminal
+- Code sẽ tự động reload khi bạn chỉnh sửa (Hot Module Replacement)
+- Dự án sử dụng Tailwind CSS cho styling
+- React version: 19.1.0
+- Vite version: 6.3.5
+
+=====================================================
